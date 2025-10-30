@@ -3,7 +3,11 @@ name = "hometech"
 version = "1.0.0"
 
 [package]
-entrypoint = "php -S 0.0.0.0:8080 -t ."
+name = "my-wordpress"
+version = "8.3"
+
+[workload]
+app_type = "wordpress"
 
 [dependencies]
 # Optional: If you have any PHP extensions, declare them here.
