@@ -1,21 +1,28 @@
-[project]
-name = "hometech"
-version = "1.0.1"
-
 [package]
-name = "my-wordpress"
-version = "8.3.0"
-
-[component]
-source = "."
-runner = "wordpress"
+entrypoint = "run"
 
 [dependencies]
-# Optional: If you have any PHP extensions, declare them here.
+"php/php-eh" = "=8.3.404-beta.4"
+"wasmer/bash" = "*"
+"wasmer/static-web-server" = "*"
 
-[env]
-# Adjust to your needs
-WORDPRESS_DB_HOST = "db.us-losa1.bengt.wasmernet.com:16751"
-WORDPRESS_DB_USER = "3cdffafa7025800002a95431d6a9"
-WORDPRESS_DB_PASSWORD = "06903cdf-fafa-718f-8000-33786f6c9fe7"
-WORDPRESS_DB_NAME = "dbSiHgRfdpT6A3fvCjuBaKxy"
+[fs]
+"/app" = "app"
+"/db" = "db"
+"/config" = "config"
+
+[[command]]
+name = "run"
+module = "php/php-eh:php"
+runner = "wasi"
+[command.annotations.wasi]
+main-args = [
+    "-t", "/app",
+    "-S", "0.0.0.0:8080",
+    "-d", "memory_limit=256M",
+    "-d", "max_execution_time=600",
+    "-d", "max_input_time=600",
+    "-d", "max_input_vars=4096",
+    "-d", "upload_max_filesize=1024M",
+    "-d", "post_max_size=1024M",
+]
