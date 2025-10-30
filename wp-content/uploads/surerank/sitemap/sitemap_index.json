@@ -1,0 +1,18 @@
+[
+    {
+        "link": "http:\/\/localhost:8000\/post-type-page-sitemap-1.xml",
+        "updated": "2025-10-30T14:59:54-03:00"
+    },
+    {
+        "link": "http:\/\/localhost:8000\/post-type-post-sitemap-1.xml",
+        "updated": "2025-10-30T14:59:54-03:00"
+    },
+    {
+        "link": "http:\/\/localhost:8000\/post-type-product-sitemap-1.xml",
+        "updated": "2025-10-30T14:59:54-03:00"
+    },
+    {
+        "link": "http:\/\/localhost:8000\/taxonomy-type-category-sitemap-1.xml",
+        "updated": "2025-10-30T14:59:54-03:00"
+    }
+]
