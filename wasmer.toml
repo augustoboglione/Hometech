@@ -3,7 +3,8 @@ name = "hometech"
 version = "1.0.0"
 
 [package]
-entrypoint = "php index.php"
+entrypoint = "index.php"
+runtime = "php@8.3"
 
 [dependencies]
 # Optional: If you have any PHP extensions, declare them here.
