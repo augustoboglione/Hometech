@@ -2,6 +2,9 @@
 name = "hometech"
 version = "1.0.0"
 
+[package]
+entrypoint = "php -S 0.0.0.0:8080 -t ."
+
 [dependencies]
 # Optional: If you have any PHP extensions, declare them here.
 
