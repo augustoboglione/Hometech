@@ -5,10 +5,10 @@ version = "1.0.0"
 [package]
 name = "my-wordpress"
 version = "8.3.0"
+commands = ["php", "-S", "0.0.0.0:8080", "-t", "."]
 
 [workload]
 type = "wordpress"
-commands = ["php", "-S", "0.0.0.0:8080", "-t", "."]
 
 [dependencies]
 # Optional: If you have any PHP extensions, declare them here.
