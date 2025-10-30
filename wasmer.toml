@@ -4,7 +4,7 @@ version = "1.0.0"
 
 [package]
 name = "my-wordpress"
-version = "8.3"
+version = "8.3.0"
 
 [workload]
 app_type = "wordpress"
