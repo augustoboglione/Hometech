@@ -7,7 +7,7 @@ name = "my-wordpress"
 version = "8.3.0"
 
 [workload]
-app_type = "wordpress"
+type = "wordpress"
 
 [dependencies]
 # Optional: If you have any PHP extensions, declare them here.
