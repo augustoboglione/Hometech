@@ -1,0 +1,17 @@
+[project]
+name = "hometech"
+version = "1.0.0"
+
+[package]
+entrypoint = "index.php"
+runtime = "php@8.2"
+
+[dependencies]
+# Optional: If you have any PHP extensions, declare them here.
+
+[env]
+# Adjust to your needs
+WORDPRESS_DB_HOST = "db.us-losa1.bengt.wasmernet.com"
+WORDPRESS_DB_USER = "3cdffafa7025800002a95431d6a9"
+WORDPRESS_DB_PASSWORD = "06903cdf-fafa-718f-8000-33786f6c9fe7"
+WORDPRESS_DB_NAME = "dbSiHgRfdpT6A3fvCjuBaKxy"
